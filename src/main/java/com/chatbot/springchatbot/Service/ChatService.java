@@ -15,7 +15,7 @@ public class ChatService {
     @Value("${openai.api.key}")
     private String apiKey;
 
-    // this is a link from the response comes back here
+    // this is a link where response come from
     private static final String OPENAI_URL = "https://openrouter.ai/api/v1/chat/completions";
 
     public String getChatGPTResponse(String userMessage) throws IOException {
